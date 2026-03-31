@@ -1,5 +1,7 @@
 import { create } from "zustand";
 
+export { useChatStore } from "./chat-store";
+
 type WorkbenchState = {
   inspectorOpen: boolean;
   commandPaletteOpen: boolean;
