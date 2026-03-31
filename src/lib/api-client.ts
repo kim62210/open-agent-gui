@@ -1,5 +1,7 @@
 import { appConfig } from "../config/env";
 import { getStoredApiKey, getStoredBearerToken } from "./credentials";
+export type { ChatRequestMessage, ChatStreamEvent } from "./chat-stream";
+export { parseChatStream, streamChat } from "./chat-stream";
 
 type ApiRequestOptions = RequestInit & {
   path: string;
